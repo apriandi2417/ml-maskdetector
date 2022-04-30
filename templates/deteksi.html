@@ -1,0 +1,35 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+    <div class="row justify-content-md-center">
+        <h1 style="text-align: center;">Deteksi Masker Wajah</h1>
+    </div>
+    <!-- <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div> -->
+
+    <div class="row justify-content-md-center mt-3">
+        <img id="bg" src="{{ url_for('video_feed') }}" >
+    </div>
+
+    <!-- <div class="container mt-3">
+        <div class="row">
+          <div class="col">
+            <h5>Banyak orang menggunakan masker : </h5>
+          </div>
+
+          <div class="col text-end">
+            <h5>Banyak orang tidak menggunakan masker : </h5>
+          </div>
+        </div>
+    </div> -->
+
+{% endblock %}
