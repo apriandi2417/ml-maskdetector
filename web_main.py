@@ -30,6 +30,6 @@ def deteksi():
 
 
 if __name__ == '__main__':
-    # app.run(debug=True)
-    Timer(1,lambda: webbrowser.open_new("http://127.0.0.1:5000/")).start()
-    socketio.run(app)
+    app.run(debug=False, host='0.0.0.0')
+    #Timer(1,lambda: webbrowser.open_new("http://127.0.0.1:5000/")).start()
+    #socketio.run(app)
